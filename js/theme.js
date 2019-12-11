@@ -43,7 +43,22 @@
 //    });
 	
 	
-	
+	$(window).scroll(startCounter);
+function startCounter() {
+    if ($(window).scrollTop() > 400) {
+        $(window).off("scroll", startCounter);
+        $('.count').each(function () {
+            var $this = $(this);
+            jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
+                duration: 1500,
+                easing: 'swing',
+                step: function () {
+                    $this.text(Math.ceil(this.Counter));
+                }
+            });
+        });
+    }
+}
 	
 	/*----------------------------------------------------*/
     /*  portfolio_isotope
