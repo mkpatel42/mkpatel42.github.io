@@ -59,6 +59,7 @@ function startCounter() {
         });
     }
 }
+
 	
 	/*----------------------------------------------------*/
     /*  portfolio_isotope

@@ -2,8 +2,74 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="391ccad0-0685-46c9-bee5-8a04aca2411f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/meetme.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/profile.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/_DS_Store" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/_DS_Store" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/css/_DS_Store" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/css/_DS_Store" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/css/font-awesome.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/css/normalize.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/css/normalize.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/fonts/FontAwesome.otf" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/fonts/FontAwesome.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/fonts/_DS_Store" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/fonts/_DS_Store" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/fonts/fontawesome-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/fonts/fontawesome-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/fonts/fontawesome-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/img/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/js/_DS_Store" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/js/_DS_Store" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/js/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/js/jquery-1.11.0.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/js/jquery-1.11.0.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/js/jquery.nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/js/jquery.nav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/_DS_Store" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/_DS_Store" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/scripts/shAutoloader.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/scripts/shAutoloader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/scripts/shBrushAS3.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/scripts/shBrushAS3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/scripts/shBrushAppleScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/scripts/shBrushAppleScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/scripts/shBrushBash.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/scripts/shBrushBash.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/scripts/shBrushCSharp.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/scripts/shBrushCSharp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/scripts/shBrushColdFusion.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/scripts/shBrushColdFusion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/scripts/shBrushCpp.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/scripts/shBrushCpp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/scripts/shBrushCss.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/scripts/shBrushCss.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/scripts/shBrushDelphi.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/scripts/shBrushDelphi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/scripts/shBrushDiff.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/scripts/shBrushDiff.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/scripts/shBrushErlang.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/scripts/shBrushErlang.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/scripts/shBrushGroovy.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/scripts/shBrushGroovy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/scripts/shBrushJScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/scripts/shBrushJScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/scripts/shBrushJava.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/scripts/shBrushJava.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/scripts/shBrushJavaFX.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/scripts/shBrushJavaFX.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/scripts/shBrushPerl.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/scripts/shBrushPerl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/scripts/shBrushPhp.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/scripts/shBrushPhp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/scripts/shBrushPlain.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/scripts/shBrushPlain.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/scripts/shBrushPowerShell.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/scripts/shBrushPowerShell.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/scripts/shBrushPython.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/scripts/shBrushPython.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/scripts/shBrushRuby.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/scripts/shBrushRuby.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/scripts/shBrushSass.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/scripts/shBrushSass.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/scripts/shBrushScala.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/scripts/shBrushScala.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/scripts/shBrushSql.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/scripts/shBrushSql.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/scripts/shBrushVb.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/scripts/shBrushVb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/scripts/shBrushXml.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/scripts/shBrushXml.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/scripts/shCore.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/scripts/shCore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/scripts/shLegacy.js" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/scripts/shLegacy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/styles/shCore.css" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/styles/shCore.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/styles/shCoreDefault.css" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/styles/shCoreDefault.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/styles/shCoreDjango.css" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/styles/shCoreDjango.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/styles/shCoreEclipse.css" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/styles/shCoreEclipse.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/styles/shCoreEmacs.css" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/styles/shCoreEmacs.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/styles/shCoreFadeToGrey.css" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/styles/shCoreFadeToGrey.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/styles/shCoreMDUltra.css" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/styles/shCoreMDUltra.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/styles/shCoreMidnight.css" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/styles/shCoreMidnight.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/styles/shCoreRDark.css" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/styles/shCoreRDark.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/styles/shThemeDefault.css" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/styles/shThemeDefault.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/styles/shThemeDjango.css" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/styles/shThemeDjango.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/styles/shThemeEclipse.css" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/styles/shThemeEclipse.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/styles/shThemeEmacs.css" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/styles/shThemeEmacs.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/styles/shThemeFadeToGrey.css" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/styles/shThemeFadeToGrey.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/styles/shThemeMDUltra.css" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/styles/shThemeMDUltra.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/styles/shThemeMidnight.css" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/styles/shThemeMidnight.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetMe-doc/syntax-highlighter/styles/shThemeRDark.css" beforeDir="false" afterPath="$PROJECT_DIR$/profile-doc/syntax-highlighter/styles/shThemeRDark.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/about-us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/theme.js" afterDir="false" />
     </list>
@@ -12,6 +78,20 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,6 +121,135 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="DjangoTestsConfigurationType">
+      <module name="profile" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <module name="profile" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <module name="profile" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="profile" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Python.FlaskServer">
+      <module name="profile" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="profile" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <module name="profile" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <module name="profile" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -51,7 +260,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576077065103</updated>
-      <workItem from="1576077066404" duration="16114000" />
+      <workItem from="1576077066404" duration="30744000" />
     </task>
     <servers />
   </component>
