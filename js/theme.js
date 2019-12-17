@@ -263,6 +263,7 @@ TxtRotate.prototype.tick = function() {
   }, delta);
 };
 
+
 window.onload = function() {
   var elements = document.getElementsByClassName('txt-rotate');
   for (var i=0; i<elements.length; i++) {
