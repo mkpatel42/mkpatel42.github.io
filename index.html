@@ -4,30 +4,20 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Meet Patel — Senior Software Developer</title>
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 <style>
   :root {
     --black: #000000;
     --near-black: #1d1d1f;
-    --light-gray: #f5f5f7;
     --white: #ffffff;
     --apple-blue: #0071e3;
-    --link-blue: #0066cc;
     --bright-blue: #2997ff;
     --text-secondary: rgba(255,255,255,0.56);
-    --text-tertiary: rgba(255,255,255,0.32);
     --surface-1: #272729;
     --surface-2: #28282a;
-    --surface-3: #2a2a2d;
-    --surface-4: #242426;
-    --font: -apple-system, "SF Pro Display", "SF Pro Text", "Helvetica Neue", "Inter", sans-serif;
+    --font: -apple-system, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
   }
-
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
   html { scroll-behavior: smooth; }
-
   body {
     background: var(--black);
     color: var(--white);
@@ -38,29 +28,17 @@
 
   /* NAV */
   nav {
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    z-index: 100;
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
     background: rgba(0,0,0,0.72);
     backdrop-filter: saturate(180%) blur(20px);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     border-bottom: 1px solid rgba(255,255,255,0.08);
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 48px; display: flex; align-items: center; justify-content: center;
   }
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 32px;
-  }
+  nav ul { list-style: none; display: flex; gap: 28px; }
   nav a {
-    color: rgba(255,255,255,0.8);
-    text-decoration: none;
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: -0.12px;
+    color: rgba(255,255,255,0.75); text-decoration: none;
+    font-size: 12px; font-weight: 400; letter-spacing: -0.12px;
     transition: color 0.2s;
   }
   nav a:hover { color: var(--white); }
@@ -68,496 +46,313 @@
   /* HERO */
   .hero {
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 100px 24px 80px;
-    position: relative;
-    overflow: hidden;
-    background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(0,113,227,0.18) 0%, transparent 70%),
-                radial-gradient(ellipse 60% 40% at 80% 80%, rgba(41,151,255,0.08) 0%, transparent 60%),
-                var(--black);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    text-align: center; padding: 120px 24px 80px;
+    position: relative; overflow: hidden;
+    background:
+      radial-gradient(ellipse 80% 60% at 50% -10%, rgba(0,113,227,0.22) 0%, transparent 70%),
+      radial-gradient(ellipse 50% 40% at 85% 85%, rgba(41,151,255,0.09) 0%, transparent 60%),
+      var(--black);
   }
   .hero::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    opacity: 0.3;
+    content: ''; position: absolute; inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.018'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E");
   }
   .hero-eyebrow {
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--bright-blue);
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    opacity: 0;
-    animation: fadeUp 0.8s 0.2s forwards;
+    font-size: 13px; font-weight: 600; color: var(--bright-blue);
+    letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 22px;
+    opacity: 0; animation: fadeUp 0.8s 0.1s forwards;
   }
   .hero h1 {
-    font-size: clamp(48px, 8vw, 96px);
-    font-weight: 700;
-    line-height: 1.04;
-    letter-spacing: -0.04em;
-    background: linear-gradient(160deg, #fff 20%, rgba(255,255,255,0.55) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin-bottom: 24px;
-    opacity: 0;
-    animation: fadeUp 0.9s 0.35s forwards;
+    font-size: clamp(52px, 9vw, 104px);
+    font-weight: 700; line-height: 1.02; letter-spacing: -0.045em;
+    background: linear-gradient(160deg, #fff 30%, rgba(255,255,255,0.45) 100%);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    margin-bottom: 28px;
+    opacity: 0; animation: fadeUp 0.9s 0.25s forwards;
   }
   .hero-sub {
-    font-size: clamp(19px, 2.5vw, 28px);
-    font-weight: 400;
-    color: rgba(255,255,255,0.62);
-    line-height: 1.3;
-    letter-spacing: -0.01em;
-    max-width: 640px;
-    margin-bottom: 48px;
-    opacity: 0;
-    animation: fadeUp 0.9s 0.5s forwards;
+    font-size: clamp(18px, 2.4vw, 26px);
+    font-weight: 400; color: rgba(255,255,255,0.58);
+    line-height: 1.38; letter-spacing: -0.01em;
+    max-width: 620px; margin-bottom: 52px;
+    opacity: 0; animation: fadeUp 0.9s 0.4s forwards;
   }
-  .hero-sub strong { color: rgba(255,255,255,0.9); font-weight: 500; }
+  .hero-sub strong { color: rgba(255,255,255,0.92); font-weight: 500; }
   .hero-cta {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
-    justify-content: center;
-    opacity: 0;
-    animation: fadeUp 0.9s 0.65s forwards;
+    display: flex; gap: 14px; flex-wrap: wrap; justify-content: center;
+    opacity: 0; animation: fadeUp 0.9s 0.55s forwards;
   }
   .btn-primary {
-    background: var(--apple-blue);
-    color: #fff;
-    border: none;
-    border-radius: 980px;
-    padding: 12px 24px;
-    font-size: 17px;
-    font-weight: 400;
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-block;
-    transition: background 0.2s, transform 0.1s;
+    background: var(--apple-blue); color: #fff; border: none;
+    border-radius: 980px; padding: 13px 26px; font-size: 17px; font-weight: 400;
+    cursor: pointer; text-decoration: none; display: inline-block;
+    transition: background 0.2s, transform 0.15s;
   }
-  .btn-primary:hover { background: #0077ed; transform: scale(1.02); }
+  .btn-primary:hover { background: #0077ed; transform: scale(1.025); }
   .btn-outline {
-    background: transparent;
-    color: var(--bright-blue);
-    border: 1px solid rgba(41,151,255,0.4);
-    border-radius: 980px;
-    padding: 12px 24px;
-    font-size: 17px;
-    font-weight: 400;
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-block;
+    background: transparent; color: var(--bright-blue);
+    border: 1px solid rgba(41,151,255,0.38); border-radius: 980px;
+    padding: 13px 26px; font-size: 17px; font-weight: 400;
+    cursor: pointer; text-decoration: none; display: inline-block;
     transition: border-color 0.2s, color 0.2s;
   }
   .btn-outline:hover { border-color: var(--bright-blue); color: var(--white); }
-
   .hero-stats {
-    display: flex;
-    gap: 0;
-    margin-top: 80px;
-    border-top: 1px solid rgba(255,255,255,0.1);
-    padding-top: 40px;
-    opacity: 0;
-    animation: fadeUp 0.9s 0.8s forwards;
+    display: flex; gap: 0; width: 100%; max-width: 780px;
+    margin-top: 88px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 44px;
+    opacity: 0; animation: fadeUp 0.9s 0.7s forwards;
   }
-  .stat {
-    flex: 1;
-    text-align: center;
-    padding: 0 32px;
-    border-right: 1px solid rgba(255,255,255,0.1);
-  }
+  .stat { flex: 1; text-align: center; padding: 0 28px; border-right: 1px solid rgba(255,255,255,0.1); }
   .stat:last-child { border-right: none; }
-  .stat-num {
-    font-size: 40px;
-    font-weight: 600;
-    letter-spacing: -0.03em;
-    color: var(--white);
-    line-height: 1;
-    margin-bottom: 6px;
-  }
-  .stat-label {
-    font-size: 12px;
-    color: var(--text-secondary);
-    letter-spacing: -0.01em;
-  }
-
+  .stat-num { font-size: 42px; font-weight: 600; letter-spacing: -0.04em; line-height: 1; margin-bottom: 7px; }
+  .stat-label { font-size: 12px; color: var(--text-secondary); line-height: 1.35; }
   @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(24px); }
+    from { opacity: 0; transform: translateY(22px); }
     to   { opacity: 1; transform: translateY(0); }
   }
 
-  /* SECTION SHELL */
-  section {
-    padding: 100px 24px;
-    max-width: 980px;
-    margin: 0 auto;
-  }
+  /* SECTIONS */
+  .sw { padding: 110px 24px; max-width: 980px; margin: 0 auto; }
+  .dark-bg { background: var(--near-black); }
+  .dark-bg .sw { max-width: 980px; margin: 0 auto; }
   .section-label {
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--bright-blue);
-    margin-bottom: 12px;
+    font-size: 12px; font-weight: 600; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--bright-blue); margin-bottom: 12px;
   }
   .section-heading {
-    font-size: clamp(28px, 4vw, 48px);
-    font-weight: 600;
-    line-height: 1.08;
-    letter-spacing: -0.025em;
-    color: var(--white);
-    margin-bottom: 16px;
+    font-size: clamp(30px, 4.2vw, 52px);
+    font-weight: 600; line-height: 1.06; letter-spacing: -0.028em;
+    margin-bottom: 18px;
   }
   .section-sub {
-    font-size: 17px;
-    color: var(--text-secondary);
-    line-height: 1.47;
-    letter-spacing: -0.374px;
-    max-width: 640px;
-    margin-bottom: 64px;
+    font-size: 17px; color: var(--text-secondary);
+    line-height: 1.5; letter-spacing: -0.374px;
+    max-width: 600px; margin-bottom: 64px;
   }
+  .full-divider { border: none; border-top: 1px solid rgba(255,255,255,0.08); margin: 0; }
 
-  /* STORY / ABOUT */
-  .story-section {
-    background: var(--near-black);
-    max-width: 100%;
-    padding: 100px 0;
-  }
-  .story-inner {
-    max-width: 980px;
-    margin: 0 auto;
-    padding: 0 24px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    align-items: center;
-  }
+  /* STORY */
+  .story-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 88px; align-items: start; }
   .story-text h2 {
-    font-size: clamp(28px, 4vw, 40px);
-    font-weight: 600;
-    letter-spacing: -0.025em;
-    line-height: 1.1;
-    margin-bottom: 24px;
+    font-size: clamp(28px, 3.8vw, 44px); font-weight: 600;
+    letter-spacing: -0.028em; line-height: 1.08; margin-bottom: 28px;
   }
   .story-text p {
-    font-size: 17px;
-    color: rgba(255,255,255,0.7);
-    line-height: 1.58;
-    letter-spacing: -0.374px;
-    margin-bottom: 16px;
+    font-size: 17px; color: rgba(255,255,255,0.66);
+    line-height: 1.62; letter-spacing: -0.3px; margin-bottom: 18px;
   }
+  .story-text p:last-child { margin-bottom: 0; }
   .story-text p strong { color: var(--white); font-weight: 500; }
-  .story-visual {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
+  .story-chips { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .chip {
+    background: var(--surface-2); border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 14px; padding: 22px 18px;
+    transition: border-color 0.25s, transform 0.25s;
   }
-  .story-chip {
-    background: var(--surface-2);
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 12px;
-    padding: 20px 16px;
-    transition: border-color 0.2s, transform 0.2s;
-  }
-  .story-chip:hover {
-    border-color: rgba(41,151,255,0.4);
-    transform: translateY(-2px);
-  }
-  .story-chip:first-child {
+  .chip:hover { border-color: rgba(41,151,255,0.38); transform: translateY(-2px); }
+  .chip.wide {
     grid-column: span 2;
-    background: linear-gradient(135deg, rgba(0,113,227,0.15) 0%, rgba(41,151,255,0.05) 100%);
-    border-color: rgba(41,151,255,0.2);
+    background: linear-gradient(135deg, rgba(0,113,227,0.14) 0%, rgba(41,151,255,0.04) 100%);
+    border-color: rgba(41,151,255,0.18);
   }
-  .chip-icon { font-size: 24px; margin-bottom: 8px; }
-  .chip-title { font-size: 14px; font-weight: 600; color: var(--white); margin-bottom: 4px; }
-  .chip-desc { font-size: 12px; color: var(--text-secondary); line-height: 1.4; }
+  .chip-icon { font-size: 26px; margin-bottom: 10px; }
+  .chip-title { font-size: 14px; font-weight: 600; margin-bottom: 5px; }
+  .chip-desc { font-size: 12px; color: var(--text-secondary); line-height: 1.45; }
 
-  /* EXPERIENCE */
-  .exp-grid { display: flex; flex-direction: column; gap: 2px; }
+  /* EXPERIENCE — KEY FIX: gap: 24px between cards */
+  .exp-grid { display: flex; flex-direction: column; gap: 24px; }
+
   .exp-card {
     background: var(--surface-1);
-    border: 1px solid rgba(255,255,255,0.06);
-    border-radius: 18px;
-    padding: 36px 40px;
-    position: relative;
-    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 20px; padding: 40px 44px;
+    position: relative; overflow: hidden;
     transition: border-color 0.3s, transform 0.3s;
   }
-  .exp-card:hover {
-    border-color: rgba(41,151,255,0.3);
-    transform: scale(1.005);
+  .exp-card:hover { border-color: rgba(41,151,255,0.28); transform: scale(1.003); }
+  .exp-card::after {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px;
+    background: linear-gradient(90deg, transparent 0%, rgba(41,151,255,0.5) 50%, transparent 100%);
+    opacity: 0; transition: opacity 0.3s;
   }
-  .exp-card::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(41,151,255,0.4), transparent);
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
-  .exp-card:hover::before { opacity: 1; }
-  .exp-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 8px;
-    flex-wrap: wrap;
-    gap: 12px;
-  }
-  .exp-role {
-    font-size: 21px;
-    font-weight: 700;
-    letter-spacing: -0.01em;
-  }
-  .exp-period {
-    font-size: 12px;
-    color: var(--text-secondary);
-    background: rgba(255,255,255,0.06);
-    padding: 4px 12px;
-    border-radius: 980px;
-    white-space: nowrap;
-  }
-  .exp-company {
-    font-size: 14px;
-    color: var(--bright-blue);
-    font-weight: 500;
-    margin-bottom: 20px;
-  }
-  .exp-bullets { list-style: none; display: flex; flex-direction: column; gap: 10px; }
-  .exp-bullets li {
-    font-size: 15px;
-    color: rgba(255,255,255,0.68);
-    line-height: 1.5;
-    padding-left: 18px;
-    position: relative;
-    letter-spacing: -0.2px;
-  }
-  .exp-bullets li::before {
-    content: '→';
-    position: absolute;
-    left: 0;
-    color: var(--bright-blue);
-    font-size: 12px;
-    top: 2px;
-  }
-  .exp-bullets li strong { color: rgba(255,255,255,0.9); font-weight: 500; }
+  .exp-card:hover::after { opacity: 1; }
 
   .exp-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    background: rgba(0,113,227,0.12);
-    border: 1px solid rgba(0,113,227,0.25);
-    border-radius: 6px;
-    padding: 3px 10px;
-    font-size: 11px;
-    font-weight: 500;
-    color: var(--bright-blue);
-    margin-bottom: 20px;
+    display: inline-flex; align-items: center; gap: 7px;
+    background: rgba(0,113,227,0.1); border: 1px solid rgba(0,113,227,0.22);
+    border-radius: 6px; padding: 4px 12px;
+    font-size: 11px; font-weight: 600; color: var(--bright-blue);
+    letter-spacing: 0.03em; text-transform: uppercase; margin-bottom: 22px;
   }
-  .badge-dot {
-    width: 6px; height: 6px;
-    background: var(--bright-blue);
-    border-radius: 50%;
-    animation: pulse 2s infinite;
+  .badge-dot { width: 6px; height: 6px; background: var(--bright-blue); border-radius: 50%; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.35} }
+
+  .exp-header {
+    display: flex; justify-content: space-between; align-items: flex-start;
+    flex-wrap: wrap; gap: 12px; margin-bottom: 6px;
   }
-  @keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.4; }
+  .exp-role { font-size: 22px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; }
+  .exp-role-sub { font-size: 14px; font-weight: 400; color: rgba(255,255,255,0.42); margin-top: 2px; }
+  .exp-period {
+    font-size: 12px; color: var(--text-secondary);
+    background: rgba(255,255,255,0.06);
+    padding: 5px 14px; border-radius: 980px; white-space: nowrap; flex-shrink: 0;
   }
+  .exp-company { font-size: 14px; color: var(--bright-blue); font-weight: 500; margin-bottom: 24px; }
+  .exp-bullets { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+  .exp-bullets li {
+    font-size: 15px; color: rgba(255,255,255,0.65);
+    line-height: 1.55; padding-left: 20px; position: relative; letter-spacing: -0.15px;
+  }
+  .exp-bullets li::before {
+    content: '→'; position: absolute; left: 0;
+    color: var(--bright-blue); font-size: 11px; top: 3px;
+  }
+  .exp-bullets li strong { color: rgba(255,255,255,0.92); font-weight: 500; }
+
+  /* SPLITNSAVE */
+  .sns-card {
+    background: linear-gradient(135deg, #0a1628 0%, #0d1f3c 40%, #071220 100%);
+    border: 1px solid rgba(41,151,255,0.25);
+    border-radius: 24px; padding: 56px 52px;
+    position: relative; overflow: hidden;
+    display: grid; grid-template-columns: 1fr auto;
+    gap: 48px; align-items: center;
+  }
+  .sns-card::before {
+    content: ''; position: absolute; top: -80px; right: -80px;
+    width: 360px; height: 360px;
+    background: radial-gradient(circle, rgba(41,151,255,0.13) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .sns-eyebrow {
+    font-size: 12px; font-weight: 600; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--bright-blue); margin-bottom: 14px;
+  }
+  .sns-title {
+    font-size: clamp(28px, 4vw, 48px); font-weight: 700;
+    letter-spacing: -0.035em; line-height: 1.04; margin-bottom: 20px;
+  }
+  .sns-desc {
+    font-size: 17px; color: rgba(255,255,255,0.65);
+    line-height: 1.62; max-width: 520px; margin-bottom: 20px;
+  }
+  .sns-desc strong { color: rgba(255,255,255,0.9); font-weight: 500; }
+  .sns-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 36px; }
+  .sns-tag {
+    background: rgba(41,151,255,0.1); border: 1px solid rgba(41,151,255,0.22);
+    border-radius: 6px; padding: 5px 12px;
+    font-size: 12px; color: var(--bright-blue); font-weight: 500;
+  }
+  .sns-cta {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--apple-blue); color: #fff; border-radius: 980px;
+    padding: 13px 26px; font-size: 16px; font-weight: 500; text-decoration: none;
+    transition: background 0.2s, transform 0.15s;
+  }
+  .sns-cta:hover { background: #0077ed; transform: scale(1.025); }
+  .sns-live-badge {
+    display: inline-flex; align-items: center; gap: 7px;
+    font-size: 13px; color: #34c759; font-weight: 600; margin-left: 20px;
+  }
+  .live-dot { width: 7px; height: 7px; background: #34c759; border-radius: 50%; animation: pulse 2s infinite; }
+  .sns-phone {
+    width: 150px; height: 280px;
+    background: linear-gradient(160deg, #1a2a45 0%, #0e1b30 100%);
+    border: 1.5px solid rgba(41,151,255,0.3); border-radius: 30px;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 10px;
+    position: relative; overflow: hidden; flex-shrink: 0;
+    box-shadow: 0 24px 64px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.04);
+  }
+  .sns-phone::before {
+    content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+    width: 56px; height: 6px; background: rgba(255,255,255,0.12); border-radius: 0 0 6px 6px;
+  }
+  .sns-phone-logo { font-size: 38px; }
+  .sns-phone-name { font-size: 14px; font-weight: 700; }
+  .sns-phone-sub { font-size: 10px; color: var(--bright-blue); font-weight: 500; }
+  .sns-phone-bar { width: 108px; height: 28px; background: rgba(41,151,255,0.12); border-radius: 8px; border: 1px solid rgba(41,151,255,0.2); }
+  .sns-phone-bar-sm { width: 86px; height: 18px; background: rgba(255,255,255,0.05); border-radius: 5px; }
 
   /* SKILLS */
-  .skills-section-bg {
-    background: var(--near-black);
-    max-width: 100%;
-    padding: 100px 0;
-  }
-  .skills-inner {
-    max-width: 980px;
-    margin: 0 auto;
-    padding: 0 24px;
-  }
-  .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
-    margin-top: 48px;
-  }
+  .skills-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; }
   .skill-card {
-    background: var(--surface-2);
-    border: 1px solid rgba(255,255,255,0.06);
-    border-radius: 18px;
-    padding: 28px 24px;
+    background: var(--surface-2); border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 18px; padding: 28px 24px;
     transition: border-color 0.25s, transform 0.25s;
   }
-  .skill-card:hover {
-    border-color: rgba(41,151,255,0.3);
-    transform: translateY(-3px);
-  }
-  .skill-card-icon { font-size: 32px; margin-bottom: 16px; }
-  .skill-card-title {
-    font-size: 17px;
-    font-weight: 600;
-    margin-bottom: 12px;
-    letter-spacing: -0.01em;
-  }
-  .skill-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-  }
+  .skill-card:hover { border-color: rgba(41,151,255,0.3); transform: translateY(-3px); }
+  .skill-card-icon { font-size: 30px; margin-bottom: 14px; }
+  .skill-card-title { font-size: 16px; font-weight: 600; margin-bottom: 14px; }
+  .skill-tags { display: flex; flex-wrap: wrap; gap: 6px; }
   .tag {
-    background: rgba(255,255,255,0.06);
-    border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 6px;
-    padding: 4px 10px;
-    font-size: 12px;
-    color: rgba(255,255,255,0.7);
-    font-weight: 400;
-    letter-spacing: -0.1px;
+    background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 6px; padding: 4px 10px;
+    font-size: 12px; color: rgba(255,255,255,0.68);
   }
 
-  /* ACHIEVEMENTS */
-  .achieve-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 12px;
-    margin-top: 48px;
-  }
+  /* IMPACT */
+  .achieve-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; }
   .achieve-card {
-    background: var(--surface-2);
-    border: 1px solid rgba(255,255,255,0.06);
-    border-radius: 18px;
-    padding: 32px 28px;
-    text-align: center;
+    background: var(--surface-2); border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 18px; padding: 36px 24px; text-align: center;
     transition: border-color 0.25s, transform 0.25s;
   }
-  .achieve-card:hover {
-    border-color: rgba(41,151,255,0.3);
-    transform: translateY(-3px);
-  }
+  .achieve-card:hover { border-color: rgba(41,151,255,0.3); transform: translateY(-3px); }
   .achieve-num {
-    font-size: 48px;
-    font-weight: 600;
-    letter-spacing: -0.04em;
-    background: linear-gradient(135deg, var(--white) 0%, rgba(41,151,255,0.8) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    line-height: 1;
-    margin-bottom: 10px;
+    font-size: 52px; font-weight: 700; letter-spacing: -0.045em;
+    background: linear-gradient(135deg, var(--white) 0%, rgba(41,151,255,0.75) 100%);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    line-height: 1; margin-bottom: 12px;
   }
-  .achieve-label {
-    font-size: 14px;
-    color: var(--text-secondary);
-    line-height: 1.4;
-  }
+  .achieve-label { font-size: 13px; color: var(--text-secondary); line-height: 1.45; }
 
-  /* EDUCATION & PROJECTS */
+  /* EDUCATION */
   .edu-card {
-    background: var(--surface-2);
-    border: 1px solid rgba(255,255,255,0.06);
-    border-radius: 18px;
-    padding: 36px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 40px;
-    transition: border-color 0.25s;
+    background: var(--surface-2); border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 20px; padding: 40px 44px;
+    display: flex; justify-content: space-between; align-items: flex-start;
+    gap: 48px; transition: border-color 0.25s;
   }
   .edu-card:hover { border-color: rgba(41,151,255,0.3); }
-  .edu-left h3 {
-    font-size: 21px;
-    font-weight: 700;
-    margin-bottom: 6px;
-    letter-spacing: -0.01em;
-  }
-  .edu-left .school { color: var(--bright-blue); font-size: 14px; font-weight: 500; margin-bottom: 12px; }
-  .edu-left p { color: rgba(255,255,255,0.6); font-size: 15px; }
-  .edu-right { text-align: right; flex-shrink: 0; }
-  .edu-right .year { font-size: 32px; font-weight: 600; letter-spacing: -0.03em; color: rgba(255,255,255,0.2); }
+  .edu-left h3 { font-size: 22px; font-weight: 700; margin-bottom: 8px; letter-spacing: -0.02em; }
+  .edu-school { color: var(--bright-blue); font-size: 14px; font-weight: 500; margin-bottom: 16px; }
+  .edu-left p { color: rgba(255,255,255,0.6); font-size: 15px; line-height: 1.55; }
+  .edu-year { font-size: 40px; font-weight: 600; letter-spacing: -0.04em; color: rgba(255,255,255,0.15); }
+  .edu-period { font-size: 12px; color: rgba(255,255,255,0.3); margin-top: 4px; }
 
-  /* CONTACT / FOOTER */
-  .contact-section {
-    background: var(--near-black);
-    max-width: 100%;
-    padding: 100px 0 60px;
-  }
-  .contact-inner {
-    max-width: 980px;
-    margin: 0 auto;
-    padding: 0 24px;
-    text-align: center;
-  }
-  .contact-inner .section-heading { margin-bottom: 16px; }
-  .contact-inner p {
-    font-size: 17px;
-    color: var(--text-secondary);
-    margin-bottom: 48px;
-    max-width: 520px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .contact-links {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    flex-wrap: wrap;
-    margin-bottom: 80px;
-  }
+  /* CONTACT */
+  .contact-inner { text-align: center; }
+  .contact-inner .section-sub { margin-left: auto; margin-right: auto; }
+  .contact-links { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-bottom: 56px; }
   .contact-link {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    background: var(--surface-2);
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 12px;
-    padding: 14px 24px;
-    color: var(--white);
-    text-decoration: none;
-    font-size: 15px;
+    display: flex; align-items: center; gap: 9px;
+    background: var(--surface-2); border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px; padding: 15px 22px; color: var(--white);
+    text-decoration: none; font-size: 14px;
     transition: border-color 0.2s, background 0.2s;
   }
-  .contact-link:hover {
-    border-color: rgba(41,151,255,0.4);
-    background: rgba(41,151,255,0.07);
-  }
-  footer {
-    border-top: 1px solid rgba(255,255,255,0.08);
-    padding: 20px 24px;
-    text-align: center;
-  }
-  footer p { font-size: 12px; color: rgba(255,255,255,0.3); }
-
-  /* DIVIDERS */
-  .full-divider {
-    border: none;
-    border-top: 1px solid rgba(255,255,255,0.08);
-    margin: 0;
-  }
+  .contact-link:hover { border-color: rgba(41,151,255,0.4); background: rgba(41,151,255,0.07); }
+  footer { border-top: 1px solid rgba(255,255,255,0.08); padding: 22px 24px; text-align: center; }
+  footer p { font-size: 12px; color: rgba(255,255,255,0.28); }
 
   /* RESPONSIVE */
-  @media (max-width: 760px) {
-    .story-inner { grid-template-columns: 1fr; gap: 48px; }
+  @media (max-width: 780px) {
+    .story-grid { grid-template-columns: 1fr; gap: 48px; }
     .skills-grid { grid-template-columns: 1fr 1fr; }
     .achieve-grid { grid-template-columns: 1fr 1fr; }
     .hero-stats { flex-wrap: wrap; }
-    .stat { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.1); padding: 16px 0; }
+    .stat { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.1); padding: 18px 0; }
     .stat:last-child { border-bottom: none; }
-    .edu-card { flex-direction: column; gap: 16px; }
-    .edu-right { text-align: left; }
-    .exp-card { padding: 24px 20px; }
+    .edu-card { flex-direction: column; gap: 20px; }
+    .exp-card { padding: 28px 22px; }
+    .sns-card { grid-template-columns: 1fr; }
+    .sns-phone { display: none; }
+    .sns-live-badge { margin-left: 0; margin-top: 16px; display: flex; }
   }
-  @media (max-width: 500px) {
+  @media (max-width: 520px) {
     .skills-grid { grid-template-columns: 1fr; }
     .achieve-grid { grid-template-columns: 1fr; }
   }
@@ -570,6 +365,7 @@
   <ul>
     <li><a href="#story">About</a></li>
     <li><a href="#experience">Experience</a></li>
+    <li><a href="#venture">SplitNSave</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#impact">Impact</a></li>
     <li><a href="#education">Education</a></li>
@@ -579,32 +375,33 @@
 
 <!-- HERO -->
 <div class="hero">
-  <p class="hero-eyebrow">Senior Software Developer · 8+ Years</p>
+  <p class="hero-eyebrow">Senior Software Developer · Builder · 8+ Years</p>
   <h1>Meet Patel</h1>
   <p class="hero-sub">
-    <strong>Engineer. Builder. Problem-solver.</strong><br />
-    Turning complex systems into elegant experiences — at the intersection of performance, scale, and craft.
+    I don't just write code —<br/>
+    I <strong>architect systems</strong> that scale, <strong>lead teams</strong> that ship,<br/>
+    and <strong>build products</strong> people actually use.
   </p>
   <div class="hero-cta">
-    <a href="#experience" class="btn-primary">View my work</a>
-    <a href="#contact" class="btn-outline">Get in touch</a>
+    <a href="#experience" class="btn-primary">See my work</a>
+    <a href="#contact" class="btn-outline">Let's talk</a>
   </div>
   <div class="hero-stats">
     <div class="stat">
       <div class="stat-num">8+</div>
-      <div class="stat-label">Years of Experience</div>
+      <div class="stat-label">Years of production-grade engineering</div>
     </div>
     <div class="stat">
       <div class="stat-num">250%</div>
-      <div class="stat-label">Faster Angular Dev</div>
+      <div class="stat-label">Faster dev via AI-led migration</div>
     </div>
     <div class="stat">
       <div class="stat-num">70%</div>
-      <div class="stat-label">Report Dev Time Saved</div>
+      <div class="stat-label">Reduction in report dev time at RBC</div>
     </div>
     <div class="stat">
       <div class="stat-num">40%</div>
-      <div class="stat-label">Cloud Cost Reduction</div>
+      <div class="stat-label">Infrastructure cost cut via cloud</div>
     </div>
   </div>
 </div>
@@ -612,41 +409,43 @@
 <hr class="full-divider" />
 
 <!-- STORY -->
-<div class="story-section" id="story">
-  <div class="story-inner">
-    <div class="story-text">
-      <p class="section-label">The story</p>
-      <h2>Built from curiosity.<br />Sharpened by scale.</h2>
-      <p>
-        My journey began in Ahmedabad, where an obsession with how things work led to a degree in software engineering, then a Master's in Applied Computing at the University of Windsor.
-      </p>
-      <p>
-        Since then, I've shipped production systems across <strong>fintech, govtech, and enterprise SaaS</strong> — from Android integrations at Openxcell, to regulatory platforms at Thentia, to the cloud-scale infrastructure at <strong>RBC</strong>, Canada's largest bank.
-      </p>
-      <p>
-        Today I lead full-stack initiatives that intersect <strong>data, performance, and developer experience</strong>. I don't just write code — I mentor teams, architect systems, and use AI tooling to move 3× faster without sacrificing quality.
-      </p>
-    </div>
-    <div class="story-visual">
-      <div class="story-chip">
-        <div class="chip-icon">🏦</div>
-        <div class="chip-title">Currently at RBC</div>
-        <div class="chip-desc">Lead Data &amp; Digital Reporting — delivering self-serve analytics for 10+ teams across Canada's #1 bank.</div>
+<div class="dark-bg" id="story">
+  <div class="sw">
+    <div class="story-grid">
+      <div class="story-text">
+        <p class="section-label">The origin story</p>
+        <h2>Built from first principles.<br/>Hardened at scale.</h2>
+        <p>
+          It started with a relentless need to understand how things work — not just use them. That obsession drove me from Ahmedabad to Windsor, where I completed a <strong>Master of Applied Computing</strong> and landed a role at BlackBerry before I even graduated.
+        </p>
+        <p>
+          Since then, I've shipped production software across <strong>Android, govtech, fintech, and enterprise SaaS</strong> — building for government regulatory boards at Thentia, integrating AI data pipelines at AiZtech, architecting enterprise APIs at Cognizant, and now leading digital transformation at <strong>RBC</strong>, Canada's largest financial institution.
+        </p>
+        <p>
+          I operate at the intersection of <strong>system design, developer velocity, and business impact</strong>. I use AI tooling not as a crutch — but as a force multiplier. And outside of RBC, I'm building <strong>SplitNSave</strong>, a live consumer app I co-founded solo.
+        </p>
       </div>
-      <div class="story-chip">
-        <div class="chip-icon">🤖</div>
-        <div class="chip-title">AI-Native Developer</div>
-        <div class="chip-desc">Leverages Copilot, Cursor &amp; agentic workflows to accelerate delivery without compromising quality.</div>
-      </div>
-      <div class="story-chip">
-        <div class="chip-icon">🎓</div>
-        <div class="chip-title">M.A.C. — Windsor</div>
-        <div class="chip-desc">Graduate-level systems thinking applied to every problem at scale.</div>
-      </div>
-      <div class="story-chip">
-        <div class="chip-icon">🛠️</div>
-        <div class="chip-title">Mentor &amp; Architect</div>
-        <div class="chip-desc">Weekly design workshops. 25% velocity lift for 4 junior engineers under his guidance.</div>
+      <div class="story-chips">
+        <div class="chip wide">
+          <div class="chip-icon">🏦</div>
+          <div class="chip-title">Currently at RBC</div>
+          <div class="chip-desc">Lead Data &amp; Digital Reporting — powering self-serve analytics for 10+ internal teams inside Canada's #1 bank.</div>
+        </div>
+        <div class="chip">
+          <div class="chip-icon">🚀</div>
+          <div class="chip-title">Co-Founder, SplitNSave</div>
+          <div class="chip-desc">Solo-built and launched a live consumer app. Product, engineering, deployment — all in one.</div>
+        </div>
+        <div class="chip">
+          <div class="chip-icon">🤖</div>
+          <div class="chip-title">AI-Native Engineer</div>
+          <div class="chip-desc">Prompt engineering and agentic workflows that deliver 3× output without a 3× team.</div>
+        </div>
+        <div class="chip">
+          <div class="chip-icon">🧑‍🏫</div>
+          <div class="chip-title">Mentor &amp; Multiplier</div>
+          <div class="chip-desc">Weekly design workshops that lifted a team of 4 by 25% in velocity, quarter over quarter.</div>
+        </div>
       </div>
     </div>
   </div>
@@ -655,181 +454,211 @@
 <hr class="full-divider" />
 
 <!-- EXPERIENCE -->
-<section id="experience">
+<div class="sw" id="experience">
   <p class="section-label">Career</p>
   <h2 class="section-heading">Where I've built.</h2>
-  <p class="section-sub">A decade of progressive ownership — from hands-on development to leading architecture and teams at enterprise scale.</p>
+  <p class="section-sub">A decade of increasing ownership — from individual contributor to tech lead, across some of the most demanding environments in Canada and beyond.</p>
 
   <div class="exp-grid">
+
     <!-- RBC -->
     <div class="exp-card">
       <div class="exp-badge"><span class="badge-dot"></span> Current Role</div>
       <div class="exp-header">
-        <div class="exp-role">Lead Data &amp; Digital Reporting<br /><small style="font-size:14px;font-weight:400;color:rgba(255,255,255,0.5)">Senior Full Stack Developer</small></div>
+        <div>
+          <div class="exp-role">Lead Data &amp; Digital Reporting</div>
+          <div class="exp-role-sub">Senior Full Stack Developer</div>
+        </div>
         <div class="exp-period">Nov 2023 — Present</div>
       </div>
-      <div class="exp-company">RBC · Royal Bank of Canada</div>
+      <div class="exp-company">RBC · Royal Bank of Canada, Toronto</div>
       <ul class="exp-bullets">
-        <li>Led a <strong>Power BI framework embedded in Angular</strong>, enabling self-serve analytics for 10+ teams and cutting report development time by <strong>70%</strong>.</li>
-        <li>Resolved stack-wide bottlenecks — caching, query optimization, lazy-loading — improving page load times by <strong>60%</strong>.</li>
-        <li>Executed an <strong>AI-led Angular 14 → 21 migration</strong> using prompt engineering and agentic workflows, achieving <strong>250% faster delivery</strong> than traditional timelines.</li>
-        <li>Built and maintained <strong>Helios + GitHub Actions CI/CD pipelines</strong>, automating build, test, and deploy workflows.</li>
-        <li>Championed <strong>AODA accessibility compliance</strong>, making RBC's digital tools usable for all Ontarians.</li>
-        <li>Ran weekly system design workshops for 4 junior developers, yielding a <strong>25% improvement in team velocity</strong>.</li>
+        <li>Architected a <strong>Power BI framework embedded inside Angular</strong>, turning months-long custom report requests into self-serve analytics — cutting dev time by <strong>70%</strong> for 10+ internal teams.</li>
+        <li>Hunted every bottleneck across the stack — caching, query optimization, lazy-loading — producing a <strong>60% improvement in page load performance</strong> users felt on first click.</li>
+        <li>Led an <strong>AI-powered Angular 14 → 21 migration</strong> using prompt engineering and agentic workflows, delivering <strong>250% faster velocity</strong> than any conventional rewrite could match.</li>
+        <li>Built <strong>Helios + GitHub Actions CI/CD pipelines</strong> that compressed the loop from commit to production deployment down to minutes.</li>
+        <li>Drove <strong>AODA accessibility compliance</strong> across RBC's digital platforms — making banking tools genuinely usable for every Ontario resident.</li>
+        <li>Mentored 4 junior engineers through weekly system design sessions, producing a measurable <strong>25% team velocity increase</strong> quarter over quarter.</li>
       </ul>
     </div>
 
     <!-- Cognizant -->
     <div class="exp-card">
       <div class="exp-header">
-        <div class="exp-role">Java Developer</div>
+        <div><div class="exp-role">Java Developer</div></div>
         <div class="exp-period">Jun 2022 — Jun 2023</div>
       </div>
       <div class="exp-company">Cognizant</div>
       <ul class="exp-bullets">
-        <li>Owned end-to-end design of <strong>scalable RESTful APIs</strong>, shipping production-ready services within 3 months.</li>
-        <li>Architected core business logic using <strong>JavaBeans and layered design patterns</strong> for clean separation of concerns across complex enterprise workflows.</li>
-        <li>Partnered with BAs to make business processes <strong>100% configurable</strong>, eliminating hard-coded logic.</li>
-        <li>Built STEP Workbench workflows with intricate business rules, seamlessly integrating Web UI components.</li>
+        <li>Owned full lifecycle design of <strong>scalable RESTful APIs</strong> for enterprise clients — from blank file to production-ready service in under 3 months.</li>
+        <li>Refactored core business logic using <strong>JavaBeans and layered architectural patterns</strong>, eliminating tight coupling and unlocking long-term maintainability across critical workflows.</li>
+        <li>Engineered processes that made <strong>100% of business rules configurable</strong> — no hard-coded logic, no change-request bottlenecks, no surprises at go-live.</li>
+        <li>Built <strong>STEP Workbench workflows</strong> with embedded Web UI components that streamlined end-to-end client operations.</li>
       </ul>
     </div>
 
     <!-- Thentia -->
     <div class="exp-card">
       <div class="exp-header">
-        <div class="exp-role">Software Developer</div>
+        <div><div class="exp-role">Software Developer</div></div>
         <div class="exp-period">Sep 2020 — Jun 2022</div>
       </div>
       <div class="exp-company">Thentia Corporation</div>
       <ul class="exp-bullets">
-        <li>Built <strong>reusable component libraries</strong> adopted as the base template for all new client projects.</li>
-        <li>Developed <strong>secure government-grade endpoints</strong> and user interfaces for regulatory boards.</li>
-        <li>Led client data migrations into new systems with zero-downtime delivery.</li>
-        <li>Won <strong>1st place</strong> at Thentia's internal Hack-A-Thon — outranking all employees.</li>
+        <li>Built a <strong>reusable component library</strong> so robust it became the mandatory base project for every new Thentia client onboarding — multiplying developer output across the company.</li>
+        <li>Engineered <strong>government-grade secure endpoints</strong> and interfaces for regulatory compliance boards, where correctness and security aren't optional.</li>
+        <li>Executed client data migrations into new systems — zero downtime, zero data loss, zero compromises.</li>
+        <li>Won <strong>1st place at Thentia's company-wide Hack-A-Thon</strong>, outranking every engineer and employee across the organization.</li>
       </ul>
     </div>
 
     <!-- AiZtech -->
     <div class="exp-card">
       <div class="exp-header">
-        <div class="exp-role">Full Stack Developer <span style="font-size:12px;font-weight:400;color:rgba(255,255,255,0.4)">(Contract)</span></div>
+        <div>
+          <div class="exp-role">Full Stack Developer <span style="font-size:13px;font-weight:400;color:rgba(255,255,255,0.38)">— Contract</span></div>
+        </div>
         <div class="exp-period">May 2020 — Sep 2020</div>
       </div>
       <div class="exp-company">AiZtech Canada</div>
       <ul class="exp-bullets">
-        <li>Worked on the Matchmaker application using <strong>Spring MVC, Spring Data JPA, and Spring Security</strong>.</li>
-        <li>Integrated data-science endpoints — applying <strong>cosine similarity and standard deviation algorithms</strong> to surface actionable insights.</li>
-        <li>Collaborated directly with data scientists to translate complex outputs into clean UI visualizations.</li>
+        <li>Shipped the Matchmaker application using <strong>Spring MVC, Spring Data JPA, and Spring Security</strong> — production-ready, on a contract timeline, from a standing start.</li>
+        <li>Integrated AI model outputs into real UI — applying <strong>cosine similarity and standard deviation algorithms</strong> to surface meaningful user matches from raw data science pipelines.</li>
+        <li>Bridged the gap between data scientists and product, translating complex model outputs into features real users could act on.</li>
       </ul>
     </div>
 
     <!-- BlackBerry -->
     <div class="exp-card">
       <div class="exp-header">
-        <div class="exp-role">Developer <span style="font-size:12px;font-weight:400;color:rgba(255,255,255,0.4)">(Co-op)</span></div>
+        <div>
+          <div class="exp-role">Developer <span style="font-size:13px;font-weight:400;color:rgba(255,255,255,0.38)">— Co-op</span></div>
+        </div>
         <div class="exp-period">Sep 2019 — Dec 2019</div>
       </div>
       <div class="exp-company">BlackBerry Ltd</div>
       <ul class="exp-bullets">
-        <li>Built animated training tutorials ensuring <strong>cross-platform and cross-browser compatibility</strong>.</li>
-        <li>Participated in Agile-Scrum ceremonies with business partners, scrum masters, and QA.</li>
+        <li>Built <strong>smooth-animated onboarding tutorials</strong> that worked flawlessly across every platform and browser — raising the bar for first-run UX at one of Canada's most iconic tech brands.</li>
+        <li>Embedded into a full Agile-Scrum team alongside business stakeholders, scrum masters, and QA — contributing meaningfully from day one.</li>
       </ul>
     </div>
 
     <!-- Openxcell -->
     <div class="exp-card">
       <div class="exp-header">
-        <div class="exp-role">Software Engineer — Android</div>
+        <div><div class="exp-role">Software Engineer — Android</div></div>
         <div class="exp-period">Jun 2016 — Aug 2018</div>
       </div>
       <div class="exp-company">Openxcell Technolabs Ltd</div>
       <ul class="exp-bullets">
-        <li>Integrated <strong>Google Maps, payment gateways, and Firebase</strong> (Realtime Database + Cloud Firestore).</li>
-        <li>Performed manual and unit testing with <strong>JUnit and Mocha</strong> frameworks.</li>
+        <li>Integrated <strong>Google Maps, payment gateways, and Firebase</strong> (Realtime Database + Cloud Firestore) — delivering real-world, connected Android experiences from first principles.</li>
+        <li>Established quality through rigorous <strong>manual, unit, and integration testing</strong> with JUnit and Mocha across multiple live applications.</li>
       </ul>
     </div>
+
   </div>
-</section>
+</div>
+
+<hr class="full-divider" />
+
+<!-- SPLITNSAVE -->
+<div class="dark-bg" id="venture">
+  <div class="sw">
+    <p class="section-label">Venture</p>
+    <h2 class="section-heading">Beyond the day job.</h2>
+    <p class="section-sub">The best engineers don't just build for employers. They build for the world.</p>
+
+    <div class="sns-card">
+      <div>
+        <div class="sns-eyebrow">Live Product · Co-Founder &amp; Lead Engineer</div>
+        <div class="sns-title">SplitNSave</div>
+        <p class="sns-desc">
+          <strong>Split expenses. Save together.</strong> A consumer mobile app that reimagines how friend groups and households manage shared finances — combining real-time expense splitting with a collaborative savings goal feature that no competitor offers.
+        </p>
+        <p class="sns-desc">
+          Built entirely solo — product vision, React Native frontend, Expo build pipeline, Cloudflare-hosted web app, and a live REST backend at <code style="font-size:13px;color:var(--bright-blue)">api.splitnsave.app</code>. Every architecture decision. Every deployment. Every iteration.
+        </p>
+        <div class="sns-tags">
+          <span class="sns-tag">React Native</span>
+          <span class="sns-tag">Expo</span>
+          <span class="sns-tag">Cloudflare Pages</span>
+          <span class="sns-tag">REST API</span>
+          <span class="sns-tag">Firebase</span>
+          <span class="sns-tag">Google OAuth</span>
+          <span class="sns-tag">EAS Build</span>
+          <span class="sns-tag">CI/CD</span>
+        </div>
+        <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;">
+          <a href="https://splitnsave.app" target="_blank" class="sns-cta">↗ Visit splitnsave.app</a>
+          <span class="sns-live-badge"><span class="live-dot"></span> Live in production</span>
+        </div>
+      </div>
+      <div class="sns-phone">
+        <div class="sns-phone-logo">💰</div>
+        <div class="sns-phone-name">SplitNSave</div>
+        <div class="sns-phone-sub">splitnsave.app</div>
+        <div class="sns-phone-bar"></div>
+        <div class="sns-phone-bar-sm"></div>
+        <div class="sns-phone-bar-sm"></div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <hr class="full-divider" />
 
 <!-- SKILLS -->
-<div class="skills-section-bg" id="skills">
-  <div class="skills-inner">
-    <p class="section-label">Capabilities</p>
-    <h2 class="section-heading">The full stack.</h2>
-    <p class="section-sub">From database queries to deployment pipelines — a complete range of tools, each chosen with intention.</p>
-    <div class="skills-grid">
-      <div class="skill-card">
-        <div class="skill-card-icon">☕</div>
-        <div class="skill-card-title">Backend</div>
-        <div class="skill-tags">
-          <span class="tag">Java</span>
-          <span class="tag">Spring Boot</span>
-          <span class="tag">Node.js</span>
-          <span class="tag">Django</span>
-          <span class="tag">REST APIs</span>
-          <span class="tag">RabbitMQ</span>
-          <span class="tag">Kafka</span>
-        </div>
+<div class="sw" id="skills">
+  <p class="section-label">Capabilities</p>
+  <h2 class="section-heading">The full stack.</h2>
+  <p class="section-sub">Not a list of buzzwords — tools I've shipped to production, at scale, under real constraints.</p>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <div class="skill-card-icon">☕</div>
+      <div class="skill-card-title">Backend</div>
+      <div class="skill-tags">
+        <span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Node.js</span>
+        <span class="tag">Django</span><span class="tag">REST APIs</span><span class="tag">RabbitMQ</span><span class="tag">Kafka</span>
       </div>
-      <div class="skill-card">
-        <div class="skill-card-icon">⚡</div>
-        <div class="skill-card-title">Frontend</div>
-        <div class="skill-tags">
-          <span class="tag">Angular</span>
-          <span class="tag">React.js</span>
-          <span class="tag">React Native</span>
-          <span class="tag">TypeScript</span>
-          <span class="tag">Bootstrap</span>
-          <span class="tag">Power BI</span>
-        </div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-card-icon">⚡</div>
+      <div class="skill-card-title">Frontend &amp; Mobile</div>
+      <div class="skill-tags">
+        <span class="tag">Angular</span><span class="tag">React.js</span><span class="tag">React Native</span>
+        <span class="tag">TypeScript</span><span class="tag">Bootstrap</span><span class="tag">Power BI</span>
       </div>
-      <div class="skill-card">
-        <div class="skill-card-icon">🗄️</div>
-        <div class="skill-card-title">Data &amp; Storage</div>
-        <div class="skill-tags">
-          <span class="tag">MySQL</span>
-          <span class="tag">MongoDB</span>
-          <span class="tag">DynamoDB</span>
-          <span class="tag">Firebase</span>
-          <span class="tag">SQLite</span>
-          <span class="tag">Elastic Search</span>
-        </div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-card-icon">🗄️</div>
+      <div class="skill-card-title">Data &amp; Storage</div>
+      <div class="skill-tags">
+        <span class="tag">MySQL</span><span class="tag">MongoDB</span><span class="tag">DynamoDB</span>
+        <span class="tag">Firebase</span><span class="tag">SQLite</span><span class="tag">Elastic Search</span>
       </div>
-      <div class="skill-card">
-        <div class="skill-card-icon">☁️</div>
-        <div class="skill-card-title">Cloud &amp; DevOps</div>
-        <div class="skill-tags">
-          <span class="tag">AWS</span>
-          <span class="tag">Docker</span>
-          <span class="tag">Kubernetes</span>
-          <span class="tag">GitHub Actions</span>
-          <span class="tag">CI/CD</span>
-          <span class="tag">Tomcat</span>
-        </div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-card-icon">☁️</div>
+      <div class="skill-card-title">Cloud &amp; DevOps</div>
+      <div class="skill-tags">
+        <span class="tag">AWS</span><span class="tag">Docker</span><span class="tag">Kubernetes</span>
+        <span class="tag">GitHub Actions</span><span class="tag">CI/CD</span><span class="tag">Cloudflare</span><span class="tag">EAS</span>
       </div>
-      <div class="skill-card">
-        <div class="skill-card-icon">🤖</div>
-        <div class="skill-card-title">AI-Assisted Dev</div>
-        <div class="skill-tags">
-          <span class="tag">GitHub Copilot</span>
-          <span class="tag">Cursor</span>
-          <span class="tag">Windsurf</span>
-          <span class="tag">Prompt Engineering</span>
-          <span class="tag">Agentic Workflows</span>
-        </div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-card-icon">🤖</div>
+      <div class="skill-card-title">AI-Augmented Dev</div>
+      <div class="skill-tags">
+        <span class="tag">GitHub Copilot</span><span class="tag">Cursor</span><span class="tag">Windsurf</span>
+        <span class="tag">Prompt Engineering</span><span class="tag">Agentic Workflows</span>
       </div>
-      <div class="skill-card">
-        <div class="skill-card-icon">🧠</div>
-        <div class="skill-card-title">Architecture</div>
-        <div class="skill-tags">
-          <span class="tag">System Design</span>
-          <span class="tag">MVC</span>
-          <span class="tag">Design Patterns</span>
-          <span class="tag">Data Structures</span>
-          <span class="tag">Microservices</span>
-        </div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-card-icon">🧠</div>
+      <div class="skill-card-title">Architecture &amp; Leadership</div>
+      <div class="skill-tags">
+        <span class="tag">System Design</span><span class="tag">Microservices</span>
+        <span class="tag">Design Patterns</span><span class="tag">MVC</span><span class="tag">Tech Mentorship</span>
       </div>
     </div>
   </div>
@@ -838,84 +667,81 @@
 <hr class="full-divider" />
 
 <!-- IMPACT -->
-<section id="impact">
-  <p class="section-label">By the numbers</p>
-  <h2 class="section-heading">Impact that speaks.</h2>
-  <p class="section-sub">Measurable outcomes — the only kind worth delivering.</p>
-  <div class="achieve-grid">
-    <div class="achieve-card">
-      <div class="achieve-num">70%</div>
-      <div class="achieve-label">Reduction in report development time at RBC</div>
-    </div>
-    <div class="achieve-card">
-      <div class="achieve-num">60%</div>
-      <div class="achieve-label">Faster page load times via full-stack optimization</div>
-    </div>
-    <div class="achieve-card">
-      <div class="achieve-num">250%</div>
-      <div class="achieve-label">Faster Angular development through AI-assisted migration</div>
-    </div>
-    <div class="achieve-card">
-      <div class="achieve-num">40%</div>
-      <div class="achieve-label">Infrastructure cost reduction via cloud migration</div>
-    </div>
-    <div class="achieve-card">
-      <div class="achieve-num">25%</div>
-      <div class="achieve-label">Team velocity improvement through mentorship</div>
-    </div>
-    <div class="achieve-card">
-      <div class="achieve-num">#1</div>
-      <div class="achieve-label">Hack-A-Thon champion at Thentia Corporation</div>
+<div class="dark-bg" id="impact">
+  <div class="sw">
+    <p class="section-label">By the numbers</p>
+    <h2 class="section-heading">Results, not résumé filler.</h2>
+    <p class="section-sub">Every number below is tied to a real system, a real team, a real outcome.</p>
+    <div class="achieve-grid">
+      <div class="achieve-card">
+        <div class="achieve-num">70%</div>
+        <div class="achieve-label">Reduction in report dev time — Power BI self-serve framework at RBC</div>
+      </div>
+      <div class="achieve-card">
+        <div class="achieve-num">60%</div>
+        <div class="achieve-label">Faster page loads — full-stack perf optimization across caching &amp; queries</div>
+      </div>
+      <div class="achieve-card">
+        <div class="achieve-num">250%</div>
+        <div class="achieve-label">Development velocity — AI-led Angular 14→21 migration</div>
+      </div>
+      <div class="achieve-card">
+        <div class="achieve-num">40%</div>
+        <div class="achieve-label">Infrastructure cost reduction — cloud migration of legacy systems</div>
+      </div>
+      <div class="achieve-card">
+        <div class="achieve-num">25%</div>
+        <div class="achieve-label">Team velocity lift — mentorship &amp; weekly design workshops</div>
+      </div>
+      <div class="achieve-card">
+        <div class="achieve-num">#1</div>
+        <div class="achieve-label">Hack-A-Thon — ranked first among all employees at Thentia Corporation</div>
+      </div>
     </div>
   </div>
-</section>
+</div>
 
 <hr class="full-divider" />
 
 <!-- EDUCATION -->
-<section id="education">
+<div class="sw" id="education">
   <p class="section-label">Education</p>
   <h2 class="section-heading">Where it began.</h2>
-  <p class="section-sub">A foundation in computer science, sharpened through graduate research and applied practice.</p>
+  <p class="section-sub">Graduate-level systems thinking that shapes every technical decision I make today.</p>
   <div class="edu-card">
     <div class="edu-left">
       <h3>Master of Applied Computing</h3>
-      <div class="school">University of Windsor · Windsor, Ontario, Canada</div>
-      <p>Specialized in software systems, data structures, and applied algorithms. Foundation of the architectural thinking I bring to every enterprise challenge.</p>
+      <div class="edu-school">University of Windsor · Windsor, Ontario, Canada</div>
+      <p>Deep specialization in software systems, data structures, and applied algorithms — the bedrock of how I approach architecture, performance, and scale in every system I touch.</p>
     </div>
-    <div class="edu-right">
-      <div class="year">2019</div>
-      <div style="font-size:12px;color:rgba(255,255,255,0.3);margin-top:4px;">Sept 2018 – Dec 2019</div>
+    <div style="text-align:right;flex-shrink:0;">
+      <div class="edu-year">M.A.C.</div>
+      <div class="edu-period">Sept 2018 – Dec 2019</div>
     </div>
   </div>
-</section>
+</div>
 
 <hr class="full-divider" />
 
 <!-- CONTACT -->
-<div class="contact-section" id="contact">
-  <div class="contact-inner">
-    <p class="section-label">Let's connect</p>
-    <h2 class="section-heading">Ready to build<br />something great?</h2>
-    <p>Whether it's a senior engineering role, a technical collaboration, or just a conversation about systems and scale — I'd love to hear from you.</p>
-    <div class="contact-links">
-      <a href="mailto:meetpatel12121995@gmail.com" class="contact-link">
-        <span>✉️</span> meetpatel12121995@gmail.com
-      </a>
-      <a href="tel:+12269614114" class="contact-link">
-        <span>📞</span> +1 226-961-4114
-      </a>
-      <a href="https://linkedin.com/in/meet" target="_blank" class="contact-link">
-        <span>💼</span> linkedin.com/in/meet
-      </a>
-      <a href="https://github.com/mkpatel42" target="_blank" class="contact-link">
-        <span>🐙</span> github.com/mkpatel42
-      </a>
+<div class="dark-bg" id="contact">
+  <div class="sw">
+    <div class="contact-inner">
+      <p class="section-label">Let's connect</p>
+      <h2 class="section-heading">The best systems<br/>start with a conversation.</h2>
+      <p class="section-sub">Senior engineering role, technical collaboration, or a conversation about architecture at scale — I'm ready.</p>
+      <div class="contact-links">
+        <a href="mailto:meetpatel12121995@gmail.com" class="contact-link">✉️ meetpatel12121995@gmail.com</a>
+        <a href="tel:+12269614114" class="contact-link">📞 +1 226-961-4114</a>
+        <a href="https://linkedin.com/in/meet" target="_blank" class="contact-link">💼 linkedin.com/in/meet</a>
+        <a href="https://github.com/mkpatel42" target="_blank" class="contact-link">🐙 github.com/mkpatel42</a>
+        <a href="https://splitnsave.app" target="_blank" class="contact-link">🚀 splitnsave.app</a>
+      </div>
+      <a href="#" class="btn-outline" style="font-size:14px;padding:10px 22px;">↑ Back to top</a>
     </div>
-    <a href="#story" class="btn-outline" style="font-size:14px;padding:10px 20px;">↑ Back to top</a>
   </div>
   <footer>
-    <p>© 2025 Meet Patel · Senior Software Developer · Toronto, Ontario</p>
+    <p>© 2025 Meet Patel · Senior Software Developer &amp; Co-Founder · Toronto, Ontario</p>
   </footer>
 </div>
 
